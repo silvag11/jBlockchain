@@ -15,7 +15,7 @@ public class TransactionOutput {
 		this.value = value;
 		this.parentTransactionId = parentTransactionId;
 		this.id = StringUtil
-				.apllySha256(StringUtil.getStringFromKey(reciepient) + Float.toString(value) + parentTransactionId);
+				.applySha256(StringUtil.getStringFromKey(reciepient) + Float.toString(value) + parentTransactionId);
 	}
 
 	public boolean isMine(PublicKey publicKey) {
